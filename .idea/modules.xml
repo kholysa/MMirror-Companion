@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MMirror Companion.iml" filepath="$PROJECT_DIR$/MMirror Companion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson-2.7-javadoc/gson-2.7-javadoc.iml" filepath="$PROJECT_DIR$/gson-2.7-javadoc/gson-2.7-javadoc.iml" />
+    </modules>
+  </component>
+</project>

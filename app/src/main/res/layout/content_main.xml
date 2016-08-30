@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="residence.kholy.helloworldtest.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#000000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view"
+        android:layout_above="@+id/buttonCrtSndJSON"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view2"
+        android:layout_below="@+id/spinnerCities"
+        android:layout_alignRight="@+id/spinnerCities"
+        android:layout_alignEnd="@+id/spinnerCities"
+        android:layout_margin="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Settings"
+        android:id="@+id/buttonCrtSndJSON"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewChooseCity"
+        android:layout_marginTop="42dp"
+        android:text="Choose City"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/textViewWeather"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignStart="@+id/view2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNASDAQ"
+        android:onClick="onClick"
+        android:text="NASDAQ"
+        android:layout_below="@+id/textViewStocks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerCities"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_alignBaseline="@+id/txtViewChooseCity"
+        android:layout_alignBottom="@+id/txtViewChooseCity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stocks"
+        android:id="@+id/textViewStocks"
+        android:layout_below="@+id/view2"
+        android:layout_toLeftOf="@+id/spinnerCities"
+        android:layout_toStartOf="@+id/spinnerCities"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weather Location"
+        android:id="@+id/textViewWeather"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerA"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/spinnerJ"
+        android:layout_toStartOf="@+id/textViewStocks"
+        android:layout_alignRight="@+id/spinnerJ"
+        android:layout_alignEnd="@+id/spinnerJ" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerE"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textViewNASDAQ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerJ"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/spinnerE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/spinnerIntlA"
+        android:layout_alignEnd="@+id/spinnerIntlA" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerT"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/spinnerJ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewIntlStocks"
+        android:onClick="onClick"
+        android:text="International Tickers"
+        android:layout_below="@+id/spinnerJ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerIntlA"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textViewIntlStocks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerIntlE"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/spinnerIntlA"
+        android:layout_toRightOf="@+id/spinnerIntlA"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view" />
+
+</RelativeLayout>
